@@ -146,6 +146,7 @@ section{
     margin: 2rem 0 4rem;
 }
 
+
 .btn-box {
     position: relative;
     display:flex;
@@ -474,6 +475,7 @@ span{
 .skills-column .title{
     font-size: 2.5rem;
     margin: 0 0 1.5rem;
+    margin-top: 40px;
 }
 
 .skills-box .skills-content {
@@ -562,6 +564,22 @@ span{
         animation: fill-progress3 3s ease-in-out forwards; /* Animation definition */
         width: 45%;
 }
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-color);
+    animation: fill-progress9 3s ease-in-out forwards; /* Animation definition */
+    width: 55%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-color);
+    animation: fill-progress10 3s ease-in-out forwards; /* Animation definition */
+    width: 25%;
+}
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
         display: block;
@@ -616,6 +634,23 @@ span{
       width: 100%;
     }
   }
+
+  @keyframes fill-progress10 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 25%;
+    }
+  }
+  @keyframes fill-progress9 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 55%;
+    }
+  }
   
 
 @keyframes fill-progress8 {
@@ -647,7 +682,7 @@ span{
       width: 0;
     }
     to {
-      width: 45%;
+      width: 50%;
     }
   }
   @keyframes fill-progress4 {
